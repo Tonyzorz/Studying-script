@@ -27,6 +27,18 @@
 		}
 		console.log(numbers.sort(sortfunc));
 		
+		function factory_movie(title){
+			return {
+				get_title : function(){
+					return title;
+				},
+				set_title : function(_title){
+					if(typeof _title === 'String'){
+						title = _title;	
+					}
+				}
+			}
+		}
 	</script>
 </body>
 </html>
